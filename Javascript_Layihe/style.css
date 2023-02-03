@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.todo-box {
+    width: 336px;
+    border: 1px solid #C4C4C4;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo-box {
+    width: 336px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sort {
+    text-align: end;
+    margin: 10px;
+}
+
+.sort img:hover svg {
+    color: #FFDC40;
+}
+
+
+h1 {
+    border-top: 28px solid #FFDC40;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Roboto',
+        sans-serif;
+    font-size: 26px;
+    font-weight: 900;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* flex-direction: column; */
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    padding: 6px 10px;
+    width: 250px;
+    min-height: 40px;
+}
+
+input{
+    width:88%;
+    margin-right: 4px;
+    /* margin-bottom: 15px; */
+    border: none;
+    /* border-bottom: 1px solid rgb(180, 180, 180); */
+    outline: none;
+    font-family: 'Roboto',sans-serif;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 6px 0; 
+    width: 100%;
+}
+
+
+
+.todo-box .todo-body button {
+    width: 150px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 71px;
+    outline: none;
+    border: none;
+    background-color: #AA68FE;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+.todo-box .todo-body button img{
+    opacity: 0.5;
+}
+
+
+.todo-box .todo-body button:hover img{
+    opacity: 1;
+}
+.todo-box .todo-body button:hover{
+    background-color: #9f59fc;
+}
+
+.todo-box .todo-body .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.todo-box .todo-body button img {
+    margin-right: 10px;
+}
+
+
+.sort svg {
+    cursor: pointer;
+}
+
+.sort svg:hover rect,
+.sort svg:hover path {
+    fill: black;
+}
+
+.input svg {
+    cursor: pointer;
+}
+.input span:hover svg rect {
+    fill: #AA68FE;
+}
+
+.input span:hover svg path {
+    stroke: white;
+}
+
